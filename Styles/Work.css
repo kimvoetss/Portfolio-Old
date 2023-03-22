@@ -1,0 +1,161 @@
+/*
+*
+* ==========================================
+* TABS
+* ==========================================
+*
+*/
+.tabcontent {
+    display: none;
+  }
+  
+/*
+*
+* ==========================================
+* COLLAPSIBLE PURPLE
+* ==========================================
+*
+*/
+  details {
+    user-select: none;
+    background-color: #7B709B;
+  }
+  
+  details>summary span.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    margin-left: auto;
+  }
+  
+  details[open] summary span.icon {
+    transform: rotate(180deg);
+  }
+  
+  summary {
+    display: flex;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 5px;
+    color: white;
+    background-color: #54457F;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+/*
+*
+* ==========================================
+* COLLAPSIBLE TEAL
+* ==========================================
+*
+*/
+.det_tea {
+    user-select: none;
+    background-color: #82d0d0;
+  }
+
+.sum_tea {
+    display: flex;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 5px;
+    color: white;
+    background-color: #379392;
+  }
+
+/*
+*
+* ==========================================
+* COLLAPSIBLE PINK
+* ==========================================
+*
+*/
+.det_pin {
+    user-select: none;
+    background-color: #ffbdd1 ;
+  }
+
+.sum_pin {
+    display: flex;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 5px;
+    color: white;
+    background-color: #FF82A9;
+  }
+
+/*
+*
+* ==========================================
+* COLLAPSIBLE YELLOW
+* ==========================================
+*
+*/
+.det_yel {
+  user-select: none;
+  background-color: #FFEDB2 ;
+}
+
+.sum_yel {
+  display: flex;
+  cursor: pointer;
+  margin: 5px 0px;
+  padding: 5px;
+  color: white;
+  background-color: #FFD23F;
+}
+/*
+*
+* ==========================================
+* SLIDER
+* ==========================================
+*
+*/
+
+  /*Basic structure of slider*/
+.container_slide{
+  overflow: hidden;
+  margin: 20px;
+}
+
+/*Area of images*/
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.slider_img{
+  width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}

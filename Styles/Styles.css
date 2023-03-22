@@ -1,0 +1,458 @@
+/*
+*
+* ==========================================
+* GENERAL
+* ==========================================
+*
+*/
+
+* 
+{
+    box-sizing: border-box;
+}
+  
+  body 
+  {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .main_margin
+  {
+    margin: 20px;
+    margin-bottom: auto;
+  }
+
+  .header_image
+  {
+    width: 100%;
+  }
+
+  .align_center
+  {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .align_left
+  {
+    text-align: left;
+  }
+  .align_right
+  {
+    text-align: right;
+  }
+
+  p
+  {
+    margin:5px;
+  }
+
+  button > a
+  {
+    display: inline-block;
+    text-decoration: none;
+    color: #efefef;
+  }
+  .pic_size_20
+  {
+    width: 100%;
+  }
+
+  .pic_size_40
+  {
+    width: 100%;
+  }
+
+  .pic_size_50
+  {
+    width: 100%;
+  }
+
+  /* For desktop: */
+  @media only screen and (min-width: 768px) 
+  {
+    .pic_size_20
+    {
+      width: 20%;
+    }
+  
+    .pic_size_40
+    {
+      width: 40%;
+    }
+  
+    .pic_size_50
+    {
+      width: 50%;
+    }  
+  }
+
+  /* ipad portrait: */
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .pic_size_20
+    {
+      width: 100%;
+    }
+  
+    .pic_size_40
+    {
+      width: 100%;
+    }
+  
+    .pic_size_50
+    {
+      width: 100%;
+    }
+  }
+
+  /* ipad landscape: */
+  @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    .pic_size_20
+    {
+      width: 100%;
+    }
+  
+    .pic_size_40
+    {
+      width: 100%;
+    }
+  
+    .pic_size_50
+    {
+      width: 100%;
+    } 
+  }
+
+/*
+*
+* ==========================================
+* NAVIGATION
+* ==========================================
+*
+*/
+
+  .nav 
+  {
+    height: 50px;
+    width: 100%;
+    background-color: #54457F;
+    position: relative;
+  }
+  
+  .nav > .nav-header 
+  {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title 
+  {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn 
+  {
+    display: none;
+  }
+  
+  .nav > .nav-links 
+  {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a 
+  {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover 
+  {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check 
+  {
+    display: none;
+  }
+  
+  @media (max-width:600px) 
+  {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label 
+    {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label 
+    {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span 
+    {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links 
+    {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #54457F;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a 
+    {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links 
+    {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links 
+    {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+/*
+*
+* ==========================================
+* GRID FOR MAIN
+* ==========================================
+*
+*/
+.container 
+{
+  display: block;
+  margin: 20px;
+}
+
+@media screen and (min-width: 40.375em) 
+{
+  .container 
+  {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "g1 g2";
+  }
+    .g1 { grid-area: g1; }
+    .g2 { grid-area: g2; }
+}
+
+/*
+*
+* ==========================================
+* BUTTONS
+* ==========================================
+*
+*/
+
+.button-1 {
+  background: #54457F;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.button-2 {
+  background: #379392;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.button-3 {
+  background: #ff82a9;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.button-4 {
+  background: #FFD23F;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+/*
+*
+* ==========================================
+* IMAGES
+* ==========================================
+*
+*/
+
+.content_image
+{
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+}
+
+/*
+*
+* ==========================================
+* FOOTER
+* ==========================================
+*
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #54457F;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #fff;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
