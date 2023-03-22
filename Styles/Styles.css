@@ -386,6 +386,7 @@
 
 html {
   font-size: 100%;
+  background-color: #FBFBFB;
 }
 
 body {
@@ -455,4 +456,81 @@ body {
   .footer__nav {
     flex: 2 0px;
   }
+}
+
+/*
+*
+* ==========================================
+* TABLES
+* ==========================================
+*
+*/
+table{
+  width: 100%;
+}
+#frontend td, th {
+  padding: 20px;
+}
+
+#frontend tr:nth-child(even){background-color: #f2f2f2;}
+
+#frontend tr:hover {background-color: #ddd;}
+
+#frontend th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #379392;
+  color: white;
+}
+
+/* backend */
+#backend td, th {
+  padding: 20px;
+}
+
+#backend tr:nth-child(even){background-color: #f2f2f2;}
+
+#backend tr:hover {background-color: #ddd;}
+
+#backend th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FF82A9;
+  color: white;
+}
+
+/* game development */
+#gamedev td, th {
+  padding: 20px;
+}
+
+#gamedev tr:nth-child(even){background-color: #f2f2f2;}
+
+#gamedev tr:hover {background-color: #ddd;}
+
+#gamedev th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FFD23F;
+  color: white;
+}
+
+/* other */
+#other td, th {
+  padding: 20px;
+}
+
+#other tr:nth-child(even){background-color: #f2f2f2;}
+
+#other tr:hover {background-color: #ddd;}
+
+#other th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #54457F;
+  color: white;
 }
