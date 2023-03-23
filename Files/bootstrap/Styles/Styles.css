@@ -1,0 +1,125 @@
+/*
+    GENERAL STYLING PAGE
+*/
+html {
+    height: 100%;
+    margin: auto;
+  }
+  .html_height
+  {
+    height: 100%;
+    margin: auto;
+  }
+  
+  .container_panda {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+  
+  body {
+      margin: 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background: rgb(2,0,36);
+      background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(90,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /*
+      CENTER CONTENT
+   */
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+  } 
+  
+  
+  .max350
+  {
+      width: 350px;
+      height: 350px;
+  }
+  
+  /*
+    MEDIA QUERY TO SHOW CONTENT ON DESKTOP BUT NOT ON MOBILE
+  */
+  @media all and (max-width: 959px) {
+      .desktop {
+      display: block;
+      }
+      .mobile {
+      display: none;
+      }
+     }
+  
+  
+  /*
+     APPLICATION BUTTONS
+  */
+     /* CSS */
+     .button-19 {
+       appearance: button;
+       background-color: #1899D6;
+       border: solid transparent;
+       border-radius: 16px;
+       border-width: 0 0 4px;
+       box-sizing: border-box;
+       color: #FFFFFF;
+       cursor: pointer;
+       display: inline-block;
+       font-family: din-round,sans-serif;
+       font-size: 15px;
+       font-weight: 700;
+       letter-spacing: .8px;
+       line-height: 20px;
+       margin: 0;
+       outline: none;
+       overflow: visible;
+       padding: 13px 16px;
+       text-align: center;
+       text-transform: uppercase;
+       touch-action: manipulation;
+       transform: translateZ(0);
+       transition: filter .2s;
+       user-select: none;
+       -webkit-user-select: none;
+       vertical-align: middle;
+       white-space: nowrap;
+       width: 100%;
+     }
+     
+     .button-19:after {
+       background-clip: padding-box;
+       background-color: #1CB0F6;
+       border: solid transparent;
+       border-radius: 16px;
+       border-width: 0 0 4px;
+       bottom: -4px;
+       content: "";
+       left: 0;
+       position: absolute;
+       right: 0;
+       top: 0;
+       z-index: -1;
+     }
+     
+     .button-19:main,
+     .button-19:focus {
+       user-select: auto;
+     }
+     
+     .button-19:hover:not(:disabled) {
+       filter: brightness(1.1);
+       -webkit-filter: brightness(1.1);
+     }
+     
+     .button-19:disabled {
+       cursor: auto;
+     }
