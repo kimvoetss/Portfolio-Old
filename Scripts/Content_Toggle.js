@@ -1,5 +1,5 @@
 function toggleButton(buttonName) {
-    // Declare all variables
+    // Declare all variables of toggles
     var i, tabcontent, tablinks;
   
     // Get all elements with class="tabcontent" and hide them
