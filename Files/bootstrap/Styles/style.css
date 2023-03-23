@@ -51,10 +51,6 @@ body {
   MEDIA QUERY TO SHOW CONTENT ON DESKTOP BUT NOT ON MOBILE
 */
 @media all and (max-width: 959px) {
-  html {
-    height: auto;
-    margin: auto;
-  }
     .desktop {
     display: block;
     }
