@@ -2,15 +2,23 @@
     GENERAL STYLING PAGE
 */
 html {
-  height: auto;
+  height: 100%;
   margin: auto;
 }
-
 .html_height
 {
   height: 100%;
   margin: auto;
 }
+
+.container_panda {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
 body {
     margin: 0;
     background-repeat: no-repeat;
@@ -43,6 +51,10 @@ body {
   MEDIA QUERY TO SHOW CONTENT ON DESKTOP BUT NOT ON MOBILE
 */
 @media all and (max-width: 959px) {
+  html {
+    height: auto;
+    margin: auto;
+  }
     .desktop {
     display: block;
     }
