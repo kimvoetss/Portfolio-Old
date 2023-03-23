@@ -63,7 +63,13 @@ html {
       { html {
         height: auto;
         margin: auto;
-      } }
+      } 
+    
+    .ht100{
+      height: 100%;
+      margin: auto;
+    }
+    }
   /*
      APPLICATION BUTTONS
   */
