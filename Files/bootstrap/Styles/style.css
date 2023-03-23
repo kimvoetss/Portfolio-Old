@@ -2,10 +2,16 @@
     GENERAL STYLING PAGE
 */
 html {
-    height: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.html_height
+{
+  height: 100%;
+  margin: auto;
 }
 body {
-    height: 100vh;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,16 +19,19 @@ body {
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(90,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
-/*
+@media only screen and (min-width: 1025px) {
+  /*
     CENTER CONTENT
 */
 .container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
+} 
+
 
 .max350
 {
