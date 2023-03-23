@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../Styles/style.css">
+  <link rel="stylesheet" href="../Styles/Hamburger.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header class="header z-40">
+        <!-- Logo -->
+        <a href="#" class="logo">Beats4U</a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="Bands.html">Bands</a></li>
+                <li><a href="Genres.html">Genres</a> </li>
+                <li><a href="Stages.html">Stages</a></li>
+            </ul>
+        </nav>
+    </header>
+      <!--
+        MAIN
+      -->
+        <div class="container">
+            <div class="grid grid-cols-1 gap-4 place-content-center md:grid-cols-4 md:grid-rows-2">
+                <div>Artists on stage</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><img class="max350 ml-auto mr-auto md:m-0" src="../Images/Bands/Flemming.jpg" alt=""></div>
+                <div>
+                    <h1 class="text-center text-3xl font-bold text-white md:col-span-3 md:text-left">
+                     Name:  Flemming <br>
+                     Genre: Pop <br>
+                     Stage: 3 <br>
+                     Songs: Automatisch, Amsterdam
+                    </h1>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
