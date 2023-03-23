@@ -5,11 +5,6 @@ html {
     height: 100%;
     margin: auto;
   }
-  .html_height
-  {
-    height: 100%;
-    margin: auto;
-  }
   
   .container_panda {
     position: fixed;
@@ -60,6 +55,15 @@ html {
      }
   
   
+     /*
+
+     */
+     @media only screen 
+      and (max-device-width: 1000px)
+      { html {
+        height: auto;
+        margin: auto;
+      } }
   /*
      APPLICATION BUTTONS
   */
