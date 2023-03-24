@@ -6,6 +6,15 @@
 *
 */
 
+:root
+{
+  --purple: #54457F;
+  --orange: #F26419;
+  --yellow: #FFD23F;
+  --teal: #379392;
+  --pink: #FF82A9;
+}
+
 * 
 {
     box-sizing: border-box;
@@ -125,6 +134,16 @@
     } 
   }
 
+  .enter {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .enter {
+      display: block;
+    }
+  }
+
 /*
 *
 * ==========================================
@@ -137,7 +156,7 @@
   {
     height: 50px;
     width: 100%;
-    background-color: #54457F;
+    background-color: var(--purple);
     position: relative;
   }
   
@@ -216,7 +235,7 @@
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #54457F;
+      background-color: var(--purple);
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -276,8 +295,8 @@
 *
 */
 
-.button-1 {
-  background: #54457F;
+button 
+{
   border-radius: 999px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -294,67 +313,25 @@
   width: fit-content;
   word-break: break-word;
   border: 0;
+}
+.button-1 {
+  background: var(--purple);
 }
 
 .button-2 {
-  background: #379392;
-  border-radius: 999px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
+  background: var(--teal);
 }
 
 .button-3 {
-  background: #ff82a9;
-  border-radius: 999px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
+  background: var(--pink)
 }
 
 .button-4 {
-  background: #FFD23F;
-  border-radius: 999px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
+  background: var(--yellow);
+}
+
+.button-5 {
+  background: var(--orange);
 }
 /*
 *
@@ -400,7 +377,7 @@ body {
   flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
   color: #2f2f2f;
-  background-color: #54457F;
+  background-color: var(--purple);
   border-top: 1px solid #e5e5e5;
 }
 
@@ -479,7 +456,7 @@ table{
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #379392;
+  background-color: var(--teal);
   color: white;
 }
 
@@ -496,7 +473,7 @@ table{
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #FF82A9;
+  background-color: var(--pink);
   color: white;
 }
 
@@ -513,7 +490,7 @@ table{
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #FFD23F;
+  background-color: var(--yellow);
   color: white;
 }
 
@@ -530,6 +507,6 @@ table{
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #54457F;
+  background-color: var(--purple);
   color: white;
 }

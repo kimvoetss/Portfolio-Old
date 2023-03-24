@@ -1,3 +1,16 @@
+:root
+{
+  --purple: #54457F;
+  --orange: #F26419;
+  --yellow: #FFD23F;
+  --teal: #379392;
+  --pink: #FF82A9;
+  --light_purple: #7B709B;
+  --light_orange: #f69663;
+  --light_yellow: #FFEDB2;
+  --light_teal: #82d0d0;
+  --light_pink: #ffbdd1;
+}
 /*
 *
 * ==========================================
@@ -18,7 +31,7 @@
 */
   details {
     user-select: none;
-    background-color: #7B709B;
+    background-color: var(--light_purple);
   }
   
   details>summary span.icon {
@@ -38,7 +51,7 @@
     margin: 5px 0px;
     padding: 5px;
     color: white;
-    background-color: #54457F;
+    background-color: var(--purple);
   }
   
   summary::-webkit-details-marker {
@@ -54,7 +67,7 @@
 */
 .det_tea {
     user-select: none;
-    background-color: #82d0d0;
+    background-color: var(--light_teal);
   }
 
 .sum_tea {
@@ -63,7 +76,7 @@
     margin: 5px 0px;
     padding: 5px;
     color: white;
-    background-color: #379392;
+    background-color: var(--teal);
   }
 
 /*
@@ -75,7 +88,7 @@
 */
 .det_pin {
     user-select: none;
-    background-color: #ffbdd1 ;
+    background-color: var(--light_pink) ;
   }
 
 .sum_pin {
@@ -84,7 +97,7 @@
     margin: 5px 0px;
     padding: 5px;
     color: white;
-    background-color: #FF82A9;
+    background-color: var(--pink);
   }
 
 /*
@@ -96,7 +109,7 @@
 */
 .det_yel {
   user-select: none;
-  background-color: #FFEDB2 ;
+  background-color: var(--light_yellow) ;
 }
 
 .sum_yel {
@@ -105,8 +118,30 @@
   margin: 5px 0px;
   padding: 5px;
   color: white;
-  background-color: #FFD23F;
+  background-color: var(--yellow);
 }
+
+/*
+*
+* ==========================================
+* COLLAPSIBLE ORANGE
+* ==========================================
+*
+*/
+.det_ora {
+  user-select: none;
+  background-color: var(--light_orange) ;
+}
+
+.sum_ora {
+  display: flex;
+  cursor: pointer;
+  margin: 5px 0px;
+  padding: 5px;
+  color: white;
+  background-color: var(--orange);
+}
+
 /*
 *
 * ==========================================
