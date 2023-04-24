@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript Color Changer</title>
+<link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<input type="color">
+	</div>
+<script>
+	var input = document.getElementsByTagName('input')[0];
+	input.oninput = function(){
+		document.getElementsByTagName('body')[0].style.backgroundColor = input.value;
+	}
+</script>
+</body>
+</html>
